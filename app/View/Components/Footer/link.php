@@ -1,24 +1,22 @@
 <?php
 
-namespace App\View\Components\Svg;
+namespace App\View\Components\Footer;
 
 use Illuminate\View\Component;
 
-class Rounded extends Component
+class link extends Component
 {
-    /**
-     * @var string
-     */
-    public $color;
+
+    public $to;
 
     /**
      * Create a new component instance.
      *
-     * @param string $color
+     * @param string $to
      */
-    public function __construct(string $color = 'text-light')
+    public function __construct(string $to)
     {
-        $this->color = $color;
+        $this->to = $to;
     }
 
     /**
@@ -28,6 +26,6 @@ class Rounded extends Component
      */
     public function render()
     {
-        return view('components.svg.rounded');
+        return view('components.footer.link');
     }
 }
