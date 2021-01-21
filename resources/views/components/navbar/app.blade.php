@@ -18,7 +18,7 @@
                     Services <i class="fas fa-money-bill"></i>
                 </x-navbar.link>
             </ul>
-            <a class="btn-yellow btn rounded-pill px-4 ml-lg-4" href="">
+            <a class="btn-yellow btn rounded-pill px-4 ml-lg-4" href="{{ route('contact') }}">
                 Contact <i class="fas fa-lg fa-phone-alt"></i>
             </a>
         </div>
